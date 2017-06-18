@@ -1,0 +1,377 @@
+  .logo img {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .mobile-logo {
+    margin-top: 25px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .slidedown-logo img {
+    margin-top: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .top-footer {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .main-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  a,
+  .revslider-button:hover,
+  .portfolioFilter a.current,
+  .projects .project .project-title:hover,
+  .blogpage-title a:hover,
+  .blogpage-categories a:hover,
+  .blogpost-categories a:hover,
+  .blogpage-comments-count a:hover,
+  .blogpost-comments-count a:hover,
+  .blogpage-readmore:hover,
+  .widget.widget_nav_menu ul li .sub-menu li a:hover,
+  .widget.widget_tag_cloud .tagcloud a:hover,
+  body.woocommerce .star-rating:before,
+  body.woocommerce .star-rating span:before,
+  .widget_product_categories ul.children li a,
+  .widget_shopping_cart .total {
+    color: #e4002b;
+  }
+
+  .slick-dots li button:hover,
+  .slick-dots li button:focus,
+  .slick-arrow-right:hover,
+  .slick-arrow-left:hover,
+  input[type="submit"],
+  .widget.widget_search .search-form button,
+  .widget.widget_calendar .calendar_wrap table thead th,
+  .blogpost-tags a,
+  .comment-form .form-submit input[type="submit"],
+  .error-page .error-page-button,
+  .widget_price_filter .ui-slider .ui-slider-range,
+  .widget_shopping_cart .buttons a.checkout,
+  body.woocommerce .page-numbers li span.current,
+  body.woocommerce-page.single-product .single_add_to_cart_button,
+  body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button,
+  body.woocommerce-checkout .woocommerce-info,
+  .woocommerce-MyAccount-navigation ul,
+  .woocommerce-MyAccount-navigation ul li,
+  .woocommerce-MyAccount-content .woocommerce-Button,
+  .woocommerce-MyAccount-content .woocommerce-Message .woocommerce-Button,
+  .woocommerce-MyAccount-content p .button {
+    background: #e4002b;
+  }
+
+  .revslider-button,
+  input[type="submit"],
+  input[type="submit"]:active,
+  input[type="submit"]:focus,
+  input[type="submit"]:hover,
+  .widget.widget_search .search-form .form-control,
+  input:active,
+  textarea:active,
+  .form-control:active,
+  input:focus,
+  textarea:focus,
+  .form-control:focus,
+  .widget.widget_tag_cloud .tagcloud a:hover,
+  body.woocommerce .page-numbers li span.current,
+  body.woocommerce .page-numbers li a:hover,
+  .woocommerce-tabs.wc-tabs-wrapper ul.tabs li.active {
+    border-color: #e4002b;
+  }
+
+  .menu-button.menu-button-open i,
+  .header3-phone-number {
+    color: #e4002b;
+  }
+
+  .header-signup-btn:hover,
+  body.header_transparent .nt-is-sticky .header .header-signup-btn:hover {
+    background: #e4002b;
+  }
+
+  .header-signup-btn,
+  body.header_transparent .nt-is-sticky .header .header-signup-btn {
+    border-color: #e4002b;
+  }
+
+  .main-menu>ul>li>a,
+  body.header_transparent .nt-is-sticky .main-menu>ul>li>a,
+  .header2-fullscreen .mobile-menu li>a,
+  .slidedown_menu .main-menu ul li a,
+  body.header_transparent .slidedown_menu .main-menu ul li a {
+    color: #111;
+  }
+
+  .main-menu>ul>li.current_page_item>a,
+  .main-menu>ul>li.current-menu-ancestor>a,
+  .main-menu>ul>li.current-menu-parent>a,
+  .main-menu>ul>li.current_page_ancestor>a,
+  body.header_transparent .nt-is-sticky .main-menu ul li.current-menu-item a,
+  .header2-fullscreen .mobile-menu li.current-menu-item>a,
+  .header2-fullscreen .mobile-menu li.current_page_ancestor>a {
+    color: #e4002b;
+  }
+
+  .main-menu ul li a:hover,
+  body.header_transparent .nt-is-sticky .header .main-menu ul li a:hover,
+  .header2-fullscreen .mobile-menu li>a:hover,
+  body.header_transparent .slidedown_menu .main-menu ul li a:hover {
+    color: #e4002b;
+  }
+
+  body.header_transparent .main-menu ul li a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  body.header_transparent .main-menu ul li.current-menu-item a {
+    color: #fff;
+  }
+
+  body.header_transparent .main-menu ul li a:hover {
+    color: #fff;
+  }
+
+  .main-menu ul.sub-menu li a,
+  body.header_transparent .main-menu ul.sub-menu li a,
+  body.header_transparent .nt-is-sticky .main-menu ul.sub-menu li a,
+  .header2-fullscreen ul.sub-menu li a {
+    color: #111;
+  }
+
+  .main-menu ul.sub-menu li a:hover,
+  body.header_transparent .main-menu ul.sub-menu li a:hover,
+  body.header_transparent .nt-is-sticky .main-menu ul.sub-menu li a:hover,
+  .header2-fullscreen ul.sub-menu li a:hover,
+  .header2-fullscreen ul.sub-menu li.current-menu-item a {
+    color: #e4002b;
+  }
+
+  .mobile-menu-wrapper.mobile-menu-open {
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../wp-content/uploads/2017/02/mobile-menu-bg2.jpg');
+  }
+
+  .mm-opened-logo {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+  .main-footer {
+    background-color: #0d0d0d;
+  }
+
+  .top-footer {
+    background-color: #0d0d0d;
+  }
+
+  .footer .widget_title {
+    color: #fff;
+  }
+
+  .footer {
+    color: #676767;
+  }
+
+  .footer .widget.widget_archive ul li a,
+  .footer .widget.widget_pages ul li a,
+  .footer .widget.widget_meta ul li a,
+  .footer .widget.widget_recent_comments ul li,
+  .footer .widget.widget_recent_comments ul li a,
+  .footer .widget.widget_recent_entries ul li a,
+  .footer .widget.widget_categories ul li a,
+  .footer .widget.widget_nav_menu ul li a {
+    color: #565656;
+  }
+
+  .footer .widget.widget_archive ul li a:hover,
+  .footer .widget.widget_pages ul li a:hover,
+  .footer .widget.widget_meta ul li a:hover,
+  .footer .widget.widget_recent_comments ul li a:hover,
+  .footer .widget.widget_recent_entries ul li a:hover,
+  .footer .widget.widget_categories ul li a:hover,
+  .footer .widget.widget_nav_menu ul li a:hover {
+    color: #fff;
+  }
+
+  .header1-phone-number,
+  .header1-phone-text,
+  .header-signup-btn,
+  body.header_transparent .nt-is-sticky .header .header-signup-btn,
+  .featured-box-title,
+  .featured-box-link a,
+  .services-grid figcaption .services-grid-title,
+  .services-carousel figcaption .services-carousel-title,
+  .services-grid-link a,
+  .services-carousel-link a,
+  .testimonials-grid .testimonial-name,
+  .testimonials-carousel .testimonial-name,
+  .testimonials-grid .testimonial-company,
+  .testimonials-carousel .testimonial-company,
+  .testimonials-grid .testimonial-project,
+  .testimonials-carousel .testimonial-project,
+  .portfolioFilter a,
+  .project-in-filter .project-filter-title,
+  .project-in-filter .project-filter-category a,
+  .blog-carousel-inner .blog-grid-title,
+  .blog-carousel-inner .blog-grid-categories,
+  label,
+  .label-control,
+  input[type="submit"],
+  .header3-phone-number,
+  .header3-number-toptext,
+  .mm-number .mm-number-toptext,
+  .mm-number .mm-phone-number,
+  .icon-box-title,
+  .staff-grid .staff-name,
+  .staff-grid .staff-position,
+  .staff-grid .staff-department,
+  .projects .project figcaption .project-category a,
+  .projects .project .project-title,
+  .projects .project figcaption .project-category a,
+  .breadcrumbs,
+  .blogpage-readmore,
+  .comment-form .form-submit input[type="submit"],
+  .footer .widget.widget_nav_menu ul li a,
+  .widget.widget_nav_menu ul li .sub-menu li a,
+  .widget.widget_calendar .calendar_wrap table caption,
+  body.woocommerce.post-type-archive-product .woocommerce-result-count,
+  .widget_shopping_cart .buttons a.checkout,
+  .widget_shopping_cart .buttons a,
+  strong,
+  b,
+  .widget_price_filter .price_slider_amount .button,
+  body.woocommerce-page ul.products li.product h3,
+  body.woocommerce-page ul.products li.product .button,
+  body.woocommerce-page.single-product .single_add_to_cart_button,
+  body.woocommerce-cart .shop_table th,
+  body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button,
+  body.woocommerce-checkout .woocommerce-info {
+    font-family: Poppins;
+  }
+
+  p,
+  body {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  .main-menu>ul>li>a,
+  body.header_transparent .nt-is-sticky .main-menu>ul>li>a,
+  .header2-fullscreen .mobile-menu li>a,
+  .mobile-menu li>a {
+    font-family: Poppins;
+    font-weight: 400;
+  }
+
+  .main-menu ul.sub-menu li a,
+  body.header_transparent .main-menu ul.sub-menu li a,
+  body.header_transparent .nt-is-sticky .main-menu ul.sub-menu li a,
+  .header2-fullscreen ul.sub-menu li a,
+  .mobile-menu ul.sub-menu li>a {
+    font-family: Poppins;
+    font-weight: 400;
+  }
+
+  .shop-page-title {
+    background-size: cover;
+    background-image: url('../wp-content/uploads/2017/02/revslider-3.jpg');
+  }
+
+  .red{
+    border:1px solid red;
+  }
+
+  #Heading_593b7b5920f93 {
+    font-size: 35px;
+    letter-spacing: -0.8px;
+    margin-bottom: 25px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 105%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #Heading_593b7b5920f93 {
+      font-size: 30px;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #Heading_593b7b5920f93 {
+      font-size: 25px;
+      letter-spacing: -0.4px;
+      text-align: center;
+    }
+  }
+
+.header-contact-btn,
+body.header_transparent .nt-is-sticky .header .header-signup-btn {
+    padding: 2px 20px;
+    border: 3px solid #e4002b;
+    display: inline-block;
+    border-radius: 20px;
+    color: #111;
+    cursor: pointer;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.header-contact-btn:hover,
+body.header_transparent .nt-is-sticky .header .header-signup-btn:hover {
+    background: #e4002b;
+    color: #fff;
+}

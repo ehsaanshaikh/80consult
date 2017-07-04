@@ -1,4 +1,3 @@
-// Start Document
 (function($) {
     "use strict";
 

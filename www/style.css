@@ -322,3 +322,9 @@
     background-size: cover;
     background-image: url('../wp-content/uploads/2017/02/revslider-3.jpg');
   }
+
+  section { background-color: white; margin: 10px; border:1px solid red; padding:10px; overflow:hidden; width: 334px; height: 275px; padding-left: 10px;}
+    section > section { float:left; }
+    .indent-1 { padding-left:10px; width: 1130px; height: 1130px; border:1px solid red; background-color: #efefef}
+    .indent-2 { background-color: white; margin: 10px; border:1px solid black; padding:10px; overflow:hidden; width: 334px; height: 500px; padding-left: 10px;}
+

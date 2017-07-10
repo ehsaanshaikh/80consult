@@ -375,3 +375,11 @@ body.header_transparent .nt-is-sticky .header .header-signup-btn:hover {
     background: #e4002b;
     color: #fff;
 }
+
+ section { background-color: white; margin: 10px; border:1px solid red; padding:10px; overflow:hidden; width: 334px; height: 275px; padding-left: 10px;}
+    section > section { float:left; }
+    .indent-1 { padding-left:10px; width: 1130px; height: 800px; border:1px solid white; background-color: white;}
+    .indent-2 { background-color: white; margin: 10px; border:1px solid white; padding:10px; overflow:hidden; width: 348px; height: 230px; padding-left: 10px;}
+    .indent-3 { background-color: white; margin: 10px; border:1px solid white; padding:10px; overflow:hidden; width: 348px; height: 500px; padding-left: 10px;}
+    .indent-4 { background-color: white; margin: 10px; border:1px solid white; padding:10px; overflow:hidden; width: 500px; height: 500px; padding-left: 10px;}
+    .indent-5 { padding-left:10px; width: 1400px; height: 800px; border:1px solid white; background-color: white;}

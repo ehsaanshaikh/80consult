@@ -9,6 +9,8 @@ var nodemailer = require( 'nodemailer' );
 var cors = require('cors');
 var http = require("http").createServer(app);
 
+var contact = require('./www/api/contact.js');
+
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
@@ -25,6 +27,8 @@ app.use(bodyParser.raw({ limit: '50mb' }));
 var www = connect();
 www.use(serveStatic('www'));
 app.use('/', www);
+
+app.post('/api/consult', contact.consult);
 
 app.listen(5000, function () {
   console.log('CORS-enabled web server listening on port 5000')

@@ -42,8 +42,8 @@ exports.consult = function (req, res) {
 			
     })
     
-    var recipientEmail = 'amalina.ahmad@80startups.com';
-    var subject = "[80startups.com] Consult Appointment";
+    var recipientEmail = 'ceo@80startups.com';
+    var subject = "[80STARTUPS.COM] Consult Appointment";
     var mailbody = '<table>\
                         <tr>\
                         <td><img src="http://80startups.com/img/80startups_logo.png" style="width:500px;"></td><br>\

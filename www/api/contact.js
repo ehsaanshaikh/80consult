@@ -40,7 +40,40 @@ exports.consult = function (req, res) {
       'message': message,
 		},function (err,vals){
 			
-		})
+    })
+    
+
+
+    var recipientEmail = 'amalina.ahmad@80startups.com';
+            var subject = "[80startups.com] Consult Appointment";
+
+            var mailbody = '<table>\
+                               <tr>\
+                                <td><img src="http://cfo.cxohonour.com/singapore/images/CFOHonourBanner.jpg" style="width:1000px;height:350px;"></td>\
+                              </tr>\
+                             <tr>\
+                                <td><h1>Dear Amol Chawathe,</td>\
+                              </tr>\
+                              <tr>\
+                              </tr>\
+                              <tr>\
+                                <td>You have one consult with the following client:</td>\
+                              </tr>\
+                              <tr>\
+                                <td>The details are as follow : <br><br><strong> Name:   ' + firstName + ' ' + lastName + '</strong><br><br><strong> Email:   ' + email + '</strong><br><br><strong> Contact Number:   ' + phoneNumber + '</strong><br><br><strong>Message:   ' + message + '</strong><br><br></td>\
+                              </tr>\
+                              <tr>\
+                                <td>Best wishes,</td>\
+                              </tr>\
+                              <tr>\
+                                <td><h2>CFOHONOUR Team</h2></td>\
+                              </tr>\
+                              <tr>\
+                                <td bgcolor="#000000"><font color ="white">This is a one-time email. Please do not reply to this email.</font></td>\
+                              </tr>\
+                            </table>';
+
+              send_mail(recipientEmail, subject, mailbody);
 }
 
 ///____________________END______________________
@@ -57,7 +90,7 @@ function send_mail(usermail, subject, mailbody) {
   var nodemailerMailgun = nodemailer.createTransport(mg(auth));
 
   nodemailerMailgun.sendMail({
-    from: usermail,
+    from: 'operations@80startups.com',
     to: 'amalina.ahmad@80startups.com', // An array if you have multiple recipients.
     subject: subject,
     'h:Reply-To': 'operations@80startups.com',

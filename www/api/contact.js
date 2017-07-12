@@ -8,7 +8,7 @@ var db = mysql.createPool({
 });
 
 var CRUD = require('mysql-crud');
-var consult = CRUD(db, 'contact');
+var consultCRUD = CRUD(db, 'contact');
 
 var nodemailer = require('nodemailer');
 var mg = require('nodemailer-mailgun-transport');
@@ -24,40 +24,23 @@ var transporter = nodemailer.createTransport({
 ////-----------------CONTACT-----------------
 
 exports.consult = function (req, res) {
+
   var firstName = req.body.firstname;
   var lastName = req.body.lastname;
   var email = req.body.email;
-  var phoneNumber = req.body.phoneNumber;
+  var phoneNumber = req.body.phonenumber;
   var message = req.body.message;
 
-  console.log(firstName);
-  console.log(lastName);
-  console.log(phoneNumber);
-  console.log(email);
-  console.log(message);
 
-  consult.create({
-    'First_Name': firstName,
-    'Last_Name': lastName,
-    'Email': email,
-    'Phone_Number': phoneNumber,
-    'Message': message
-  }, function (err, vals) {
-
-    if (!err) {
-      var resdata = {
-        status: true,
-        message: 'user message successfully added'
-      };
-      //res.jsonp(resdata);
-    } else {
-      var resdata = {
-        status: false,
-        message: 'record not added '
-      };
-      //res.jsonp(resdata);
-    }
-  });
+  consultCRUD.create({
+			'firstname': firstName,
+      'lastname' : lastName,
+      'email': email,
+      'phonenumber': phoneNumber,
+      'message': message,
+		},function (err,vals){
+			
+		})
 }
 
 ///____________________END______________________

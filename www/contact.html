@@ -74,6 +74,7 @@
 </head>
 
 <body class="page-template-default page page-id-163 wpb-js-composer js-comp-ver-5.1 vc_responsive">
+    <div data-ng-app="80consult" data-ng-controller="contactcontroller" ng-init="successMsg()">
 
 
     <!-- Start header -->
@@ -326,38 +327,47 @@
                                         <div role="form" class="wpcf7" id="wpcf7-f115-p138-o1" lang="en-US" dir="ltr">
                                             <div class="screen-reader-response"></div>
                                             <form name = "contactform" method = "post" ng-controller = "contactcontroller" ng-submit = "consult()">
-                                                <div style="display: none;">
+                                                <!-- <div style="display: none;">
                                                     <input type="hidden" name="_wpcf7" value="115" />
                                                     <input type="hidden" name="_wpcf7_version" value="4.7" />
                                                     <input type="hidden" name="_wpcf7_locale" value="en_US" />
                                                     <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f115-p138-o1" />
                                                     <input type="hidden" name="_wpnonce" value="891bb13f95" />
-                                                </div>
+                                                </div> -->
                                                 <div class="col-sm-6 col-xs-12 first">
                                                     <label>First Name</label><br />
-                                                    <span class="wpcf7-form-control-wrap text-657"><input type="text" name="text-657" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" ng-model = "firstname" placeholder="First Name" /></span>
+                                                    <span class="wpcf7-form-control-wrap text-657"><input type="text" name="text-657" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"  required ng-model = "firstName" placeholder="First Name" /></span>
                                                 </div>
                                                 <div class="col-sm-6 col-xs-12 first">
                                                     <label>Last Name</label><br />
-                                                    <span class="wpcf7-form-control-wrap text-658"><input type="text" name="text-658" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" ng-model = "lastName" placeholder="Last Name" /></span>
+                                                    <span class="wpcf7-form-control-wrap text-658"><input type="text" name="text-658" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required ng-model = "lastName" placeholder="Last Name" /></span>
                                                 </div>
                                                 <div class="col-sm-6 col-xs-12 second">
                                                     <label>Your Email</label><br />
-                                                    <span class="wpcf7-form-control-wrap email-157"><input type="email" name="email-157" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" ng-model = "email" placeholder="Email" /></span>
+                                                    <span class="wpcf7-form-control-wrap email-157"><input type="email" name="email-157" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required ng-model = "email" placeholder="Email" /></span>
                                                 </div>
                                                 <div class="col-sm-6 col-xs-12 second">
                                                     <label>Your Number</label><br />
-                                                    <span class="wpcf7-form-control-wrap tel-158"><input type="tel" name="tel-158" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" ng-model = "phoneNumber" placeholder="Number" /></span>
+                                                    <span class="wpcf7-form-control-wrap tel-158"><input type="tel" name="tel-158" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" required ng-model = "phoneNumber" placeholder="Number" /></span>
                                                 </div>
                                                 <div class="col-xs-12 first input-remove-margin">
                                                     <label class="add-small-space">Tell us About Your Needs</label><br />
-                                                    <span class="wpcf7-form-control-wrap text-658"><input type="text" name="text-658" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" ng-model = "description" placeholder="Brief Description" /></span>
+                                                    <span class="wpcf7-form-control-wrap text-658"><input type="text" name="text-658" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required ng-model = "description" placeholder="Brief Description" /></span>
                                                 </div>
                                                 <div class="col-sm-6 col-xs-12">
                                                     <div class="cf7-submit-btn-push"><input type="submit" value="Send Message" class="wpcf7-form-control wpcf7-submit"/></div>
                                                 </div>
                                                 <div class="wpcf7-response-output wpcf7-display-none"></div>
                                             </form>
+
+                                            <div id="thankyou">
+                                                <div class="thankyou">
+                                                    <div class="item">
+                                                        <span><h4><b><font color="green">Submitted Successfully!</font></b></h4></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -428,6 +438,7 @@
     <script type='text/javascript' src='../wp-content/themes/consultingx/assets/js/init.js?ver=1.0'></script>
     <script type='text/javascript' src='../wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
     <script type='text/javascript' src='../wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1'></script>
+</div>
 </body>
 
 </html>

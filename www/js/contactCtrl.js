@@ -4,37 +4,11 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
 
   $scope.consult = function (req, res) {
     $scope.data = {};
-    $scope.data.firstname = "";
-    $scope.data.lastname = "";
-    $scope.data.email = "";
-    $scope.data.phonenumber = "";
-    $scope.data.message = "";
-
-
-    if (!angular.isUndefined($scope.firstname)) {
-      $scope.data.firstname = $scope.firstname;
-    }
-    else { $scope.data.firstname = ""; }
-
-    if (!angular.isUndefined($scope.lastname)) {
-      $scope.data.lastname = $scope.lastname;
-    }
-    else { $scope.data.lastname = ""; }
-
-    if (!angular.isUndefined($scope.email)) {
-      $scope.data.email = $scope.email;
-    }
-    else { $scope.data.email = ""; }
-
-    if (!angular.isUndefined($scope.phonenumber)) {
-      $scope.data.phonenumber = $scope.phonenumber;
-    }
-    else { $scope.data.phonenumber = ""; }
-
-    if (!angular.isUndefined($scope.message)) {
-      $scope.data.message = $scope.message;
-    }
-    else { $scope.data.message = ""; }
+    $scope.data.firstname = $scope.firstName;
+    $scope.data.lastname = $scope.lastName;
+    $scope.data.email = $scope.email;
+    $scope.data.phonenumber = $scope.phoneNumber;
+    $scope.data.message = $scope.description;
 
 
     $http.post(baseurl + 'consult', $scope.data).success(function (res) {
@@ -43,8 +17,20 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
     }).error(function () {
       console.log("error");
     })
-    document.contact.reset();
+    document.contactform.reset();
+    $("#thankyou").show();
+    $("#thankyou").delay(3200).hide(300);
   }
+
+  //----------- Success message function ------------------------///
+  $scope.successMsg = function () {
+  console.log("triggered");
+    $("#thankyou").hide();
+  }
+
 
   
 });
+
+
+  

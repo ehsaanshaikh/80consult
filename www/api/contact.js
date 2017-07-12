@@ -49,7 +49,7 @@ exports.consult = function (req, res) {
 
             var mailbody = '<table>\
                                <tr>\
-                                <td><img src="http://80startups.com/img/80startups_logo.png" style="width:850px;"></td>\
+                                <td><img src="http://80startups.com/img/80startups_logo.png" style="width:500px;"></td><br>\
                               </tr>\
                              <tr>\
                                 <td><h1>Dear Amol Chawathe,</td>\
@@ -66,7 +66,7 @@ exports.consult = function (req, res) {
                                 <td>Best wishes,</td>\
                               </tr>\
                               <tr>\
-                                <td><h2>CFOHONOUR Team</h2></td>\
+                                <td><h2>80startups.com</h2></td>\
                               </tr>\
                               <tr>\
                                 <td bgcolor="#000000"><font color ="white">This is a one-time email. Please do not reply to this email.</font></td>\
@@ -91,7 +91,7 @@ function send_mail(usermail, subject, mailbody) {
 
   nodemailerMailgun.sendMail({
     from: 'operations@80startups.com',
-    to: 'amalina.ahmad@80startups.com', // An array if you have multiple recipients.
+    to: usermail, // An array if you have multiple recipients.
     subject: subject,
     'h:Reply-To': 'operations@80startups.com',
     //You can use "html:" to send HTML email content. It's magic!

@@ -49,7 +49,7 @@ exports.consult = function (req, res) {
 
             var mailbody = '<table>\
                                <tr>\
-                                <td><img src="http://80startups.com/www/img/80startups_logo.png" style="width:1000px;height:350px;"></td>\
+                                <td><img src="http://80startups.com/img/80startups_logo.png" style="width:850px;"></td>\
                               </tr>\
                              <tr>\
                                 <td><h1>Dear Amol Chawathe,</td>\

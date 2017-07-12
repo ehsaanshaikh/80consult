@@ -42,38 +42,35 @@ exports.consult = function (req, res) {
 			
     })
     
-
-
     var recipientEmail = 'amalina.ahmad@80startups.com';
-            var subject = "[80startups.com] Consult Appointment";
+    var subject = "[80startups.com] Consult Appointment";
+    var mailbody = '<table>\
+                        <tr>\
+                        <td><img src="http://80startups.com/img/80startups_logo.png" style="width:500px;"></td><br>\
+                      </tr>\
+                      <tr>\
+                        <td><h1>Dear Amol Chawathe,</td>\
+                      </tr>\
+                      <tr>\
+                      </tr>\
+                      <tr>\
+                        <td>You have one consult with the following client:</td>\
+                      </tr>\
+                      <tr>\
+                        <td>The details are as follow : <br><br><strong> Name:   ' + firstName + ' ' + lastName + '</strong><br><br><strong> Email:   ' + email + '</strong><br><br><strong> Contact Number:   ' + phoneNumber + '</strong><br><br><strong>Message:   ' + message + '</strong><br><br></td>\
+                      </tr>\
+                      <tr>\
+                        <td>Best wishes,</td>\
+                      </tr>\
+                      <tr>\
+                        <td><h2>80startups.com</h2></td>\
+                      </tr>\
+                      <tr>\
+                        <td bgcolor="#000000"><font color ="white">This is a one-time email. Please do not reply to this email.</font></td>\
+                      </tr>\
+                    </table>';
 
-            var mailbody = '<table>\
-                               <tr>\
-                                <td><img src="http://80startups.com/img/80startups_logo.png" style="width:500px;"></td><br>\
-                              </tr>\
-                             <tr>\
-                                <td><h1>Dear Amol Chawathe,</td>\
-                              </tr>\
-                              <tr>\
-                              </tr>\
-                              <tr>\
-                                <td>You have one consult with the following client:</td>\
-                              </tr>\
-                              <tr>\
-                                <td>The details are as follow : <br><br><strong> Name:   ' + firstName + ' ' + lastName + '</strong><br><br><strong> Email:   ' + email + '</strong><br><br><strong> Contact Number:   ' + phoneNumber + '</strong><br><br><strong>Message:   ' + message + '</strong><br><br></td>\
-                              </tr>\
-                              <tr>\
-                                <td>Best wishes,</td>\
-                              </tr>\
-                              <tr>\
-                                <td><h2>80startups.com</h2></td>\
-                              </tr>\
-                              <tr>\
-                                <td bgcolor="#000000"><font color ="white">This is a one-time email. Please do not reply to this email.</font></td>\
-                              </tr>\
-                            </table>';
-
-              send_mail(recipientEmail, subject, mailbody);
+      send_mail(recipientEmail, subject, mailbody);
 }
 
 ///____________________END______________________
@@ -103,6 +100,8 @@ function send_mail(usermail, subject, mailbody) {
       console.log('Error: ' + err);
     } else {
       console.log('Response: ' + info);
+      //res.sendStatus(200);
+      
     }
   });
 };

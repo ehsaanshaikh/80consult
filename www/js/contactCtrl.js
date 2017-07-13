@@ -11,7 +11,7 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
     $scope.data.message = $scope.description;
 
 
-    $http.post("http://80startups.com/api/consult", $scope.data).success(function (res) {
+    $http.post(baseurl + 'consult/', $scope.data).success(function (res) {
       if (res.status == 'false') {
       }
     }).error(function () {

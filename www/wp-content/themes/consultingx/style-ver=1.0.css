@@ -4820,6 +4820,7 @@ body.search .search-form button {
 .testimonials-grid .testimonial-excerpt,
 .testimonials-carousel .testimonial-excerpt {
     font-size: 13px;
+    width: 400px;
 }
 
 @media screen and (max-width: 1000px) {

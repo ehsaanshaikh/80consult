@@ -9,7 +9,7 @@ var nodemailer = require( 'nodemailer' );
 var cors = require('cors');
 var http = require("http").createServer(app);
 
-var contact = require('./www/api/contact.js');
+var contact = require('./api/contact.js');
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");

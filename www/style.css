@@ -46,7 +46,7 @@
   body.woocommerce .star-rating span:before,
   .widget_product_categories ul.children li a,
   .widget_shopping_cart .total {
-    color: #e4002b;
+    color: #5C8876;
   }
 
   .slick-dots li button:hover,
@@ -327,4 +327,3 @@
     section > section { float:left; }
     .indent-1 { padding-left:10px; width: 1130px; height: 1130px; border:1px solid red; background-color: #efefef}
     .indent-2 { background-color: white; margin: 10px; border:1px solid black; padding:10px; overflow:hidden; width: 334px; height: 500px; padding-left: 10px;}
-

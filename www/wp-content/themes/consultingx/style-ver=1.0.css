@@ -1355,7 +1355,7 @@ body.header_transparent .nt-is-sticky .header {
  * Header Transparent
  */
 body.header_transparent .header {
-    background: linear-gradient(180deg, #000 0, transparent);
+    background: #A8F1D4;
     position: absolute;
     top: 0;
     left: 0;
@@ -3655,6 +3655,11 @@ body.breadcrumbs_dark .breadcrumbs {
     font-size: 35px;
     letter-spacing: -1px;
 }
+.page-title a {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
 .parallax-window.custom-page-header {
     background: rgba(0,0,0,0.4);
 }
@@ -4169,7 +4174,7 @@ body.search .search-form button {
     right: 0;
     bottom: 0;
     content: "";
-    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0));
     -webkit-transition: transform 0.35s;
     -moz-transition: transform 0.35s;
     -ms-transition: transform 0.35s;

@@ -45,7 +45,7 @@
   body.woocommerce .star-rating span:before,
   .widget_product_categories ul.children li a,
   .widget_shopping_cart .total {
-    color: #e4002b;
+    color: #fff;
   }
 
   .slick-dots li button:hover,
@@ -172,11 +172,11 @@
   }
 
   .main-footer {
-    background-color: #0d0d0d;
+    background-color: #5C8876;
   }
 
   .top-footer {
-    background-color: #0d0d0d;
+    background-color: #5C8876;
   }
 
   .footer .widget_title {
@@ -184,7 +184,7 @@
   }
 
   .footer {
-    color: #676767;
+    color: #5C8876;
   }
 
   .footer .widget.widget_archive ul li a,

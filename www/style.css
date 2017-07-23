@@ -46,7 +46,7 @@
   body.woocommerce .star-rating span:before,
   .widget_product_categories ul.children li a,
   .widget_shopping_cart .total {
-    color: #5C8876;
+    color: #1e2d3d;
   }
 
   .slick-dots li button:hover,
@@ -70,7 +70,7 @@
   .woocommerce-MyAccount-content .woocommerce-Button,
   .woocommerce-MyAccount-content .woocommerce-Message .woocommerce-Button,
   .woocommerce-MyAccount-content p .button {
-    background: #e4002b;
+    background: #23c0f1;
   }
 
   .revslider-button,
@@ -89,7 +89,7 @@
   body.woocommerce .page-numbers li span.current,
   body.woocommerce .page-numbers li a:hover,
   .woocommerce-tabs.wc-tabs-wrapper ul.tabs li.active {
-    border-color: #e4002b;
+    border-color: #23c0f1;
   }
 
   .menu-button.menu-button-open i,
@@ -112,7 +112,7 @@
   .header2-fullscreen .mobile-menu li>a,
   .slidedown_menu .main-menu ul li a,
   body.header_transparent .slidedown_menu .main-menu ul li a {
-    color: #111;
+    color: #fff;
   }
 
   .main-menu>ul>li.current_page_item>a,
@@ -173,11 +173,11 @@
   }
 
   .main-footer {
-    background-color: #0d0d0d;
+    background-color: #1e2d3d;
   }
 
   .top-footer {
-    background-color: #0d0d0d;
+    background-color: #1e2d3d;
   }
 
   .footer .widget_title {
@@ -285,6 +285,11 @@
     font-family: Poppins;
     font-weight: 700;
   }
+  h3 a {
+    font-family: Poppins;
+    font-weight: 700;
+    color: #fff
+  }
 
   h4 {
     font-family: Poppins;
@@ -299,6 +304,7 @@
   h6 {
     font-family: Poppins;
     font-weight: 700;
+    font-size:17px;
   }
 
   .main-menu>ul>li>a,
@@ -306,7 +312,7 @@
   .header2-fullscreen .mobile-menu li>a,
   .mobile-menu li>a {
     font-family: Poppins;
-    font-weight: 400;
+    font-weight: 900;
   }
 
   .main-menu ul.sub-menu li a,
@@ -315,15 +321,135 @@
   .header2-fullscreen ul.sub-menu li a,
   .mobile-menu ul.sub-menu li>a {
     font-family: Poppins;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 16px;
   }
 
   .shop-page-title {
     background-size: cover;
     background-image: url('../wp-content/uploads/2017/02/revslider-3.jpg');
   }
+  .blue-background{
+    background-color: #e8f4fc;
+  }
+  .gradient {
+
+  /* can be treated like a fallback */
+  background-color: white;
+
+  /* will be "on top", if browser supports it */
+  background-image: linear-gradient(#e8f4fc,#e8f8f5);
+
+  /* these will reset other properties, like background-position, but it does know what you mean */
+  background: white;
+  background: linear-gradient(#e8f4fc,#e8f8f5);
+
+}
 
   section { background-color: white; margin: 10px; border:1px solid red; padding:10px; overflow:hidden; width: 334px; height: 275px; padding-left: 10px;}
     section > section { float:left; }
     .indent-1 { padding-left:10px; width: 1130px; height: 1130px; border:1px solid red; background-color: #efefef}
     .indent-2 { background-color: white; margin: 10px; border:1px solid black; padding:10px; overflow:hidden; width: 334px; height: 500px; padding-left: 10px;}
+
+.card{
+      width: 100%;
+      background: linear-gradient(210deg,#1f9cd9 20%,#2094d6 30.000000000000004%,#218cd2 40%,#2084cf 50%,#1f7ccc 60.00000000000001%,#1c6cc5 80%,#145dbe);
+      height: auto;
+      margin: 0;
+      z-index: 9999;
+      border-radius: 10px 10px 0 0;
+      padding-bottom: 40px;
+}
+
+.more{
+      width: 100%;
+      background: linear-gradient(210deg,#1f9cd9 20%,#2094d6 30.000000000000004%,#218cd2 40%,#2084cf 50%,#1f7ccc 60.00000000000001%,#1c6cc5 80%,#145dbe);
+      height: auto;
+      margin: 0;
+      z-index: 9999;
+      border-radius: 10px 10px 10px 10px;
+      padding-bottom: 40px;
+}
+
+.more ul li{
+  color: #fff ;
+}
+
+.more h6{
+  color: #fff ;
+}
+
+h2 a:hover{
+  color: #000 ;
+}
+
+.box{
+  background-color:#23C0F1;width:350px;padding:10px;
+  z-index: 10099;
+  border-radius: 5px 5px 5px 5px;
+  align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.header-contact-btn{
+  background-color:#1e2d3d;width:350px;padding:10px;
+  border-radius: 5px 5px 5px 5px;
+  align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: poppins,sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+.clickroute{
+  cursor: pointer;
+}
+
+.accountingbox{
+      width: 100%;
+      background: linear-gradient(210deg,
+        #07b592 20%,
+        #a2f9e8);
+      height: auto;
+      margin: 0;
+      z-index: 9999;
+      border-radius: 10px 10px 10px 10px;
+      padding-bottom: 40px;
+}
+
+.officebox{
+      width: 100%;
+      background: linear-gradient(210deg,
+        #cc5b95 20%,
+        #f7dcea);
+      height: auto;
+      margin: 0;
+      z-index: 9999;
+      border-radius: 10px 10px 10px 10px;
+      padding-bottom: 40px;
+}
+
+.cfobox{
+      width: 100%;
+      background: linear-gradient(210deg,
+        #f4f42c 20%,
+        #f7f7d9);
+      height: auto;
+      margin: 0;
+      z-index: 9999;
+      border-radius: 10px 10px 10px 10px;
+      padding-bottom: 40px;
+}
+
+.grantbox{
+      width: 100%;
+      background: linear-gradient(210deg,
+        #fc821e 20%,
+        #f7d5b9);
+      height: auto;
+      margin: 0;
+      z-index: 9999;
+      border-radius: 10px 10px 10px 10px;
+      padding-bottom: 40px;
+}

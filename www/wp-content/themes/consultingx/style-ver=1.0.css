@@ -216,6 +216,13 @@ td,
 th {
     padding: 0; }
 
+p {
+  font-size: 17px;
+    letter-spacing: -0.4px;
+    font-family: Poppins, sans-serif;
+
+
+}
 
 /*--------------------------------------------------------------
 # WordPress Core
@@ -410,7 +417,7 @@ a img.aligncenter {
 #wrapper {
     position: relative;
     overflow: hidden;
-    padding: 80px 0;
+    padding-top:20px ;
 }
 body.remove_padding #wrapper {
     padding: 0;
@@ -506,7 +513,7 @@ label, .label-control {
     font-family: 'Poppins', 'sans-serif';
     font-size: 12px;
     letter-spacing: -0.2px;
-    color: #777;
+    color: #1e2d3d;
 }
 body textarea.form-control,
 body textarea.wpcf7-form-control,
@@ -1193,7 +1200,7 @@ body.header_transparent .nt-is-sticky .header .dark-logo {
  */
 .header {
     display: block;
-    background: #fff;
+    background: #1e2d3d;
     padding: 30px 0;
 }
 
@@ -1355,7 +1362,7 @@ body.header_transparent .nt-is-sticky .header {
  * Header Transparent
  */
 body.header_transparent .header {
-    background: #A8F1D4;
+    background: #1E2D3D;
     position: absolute;
     top: 0;
     left: 0;
@@ -1430,7 +1437,7 @@ body.header_transparent .nt-is-sticky .header .header-signup-btn {
     border: 3px solid #e4002b;
     display: inline-block;
     border-radius: 50px;
-    color: #111;
+    color: #fff;
     cursor: pointer;
     font-family: 'Poppins', 'sans-serif';
     font-size: 13px;
@@ -1457,7 +1464,7 @@ body.header_transparent .nt-is-sticky .header .header-signup-btn:hover {
     text-transform: uppercase;
     font-weight: 300;
     font-family: Poppins, sans-serif;
-    color: #333;
+    color: #fff;
 }
 .header_transparent .header1-phone-text {
     color: rgba(255,255,255,0.8);
@@ -1466,7 +1473,7 @@ body.header_transparent .nt-is-sticky .header .header-signup-btn:hover {
     font-size: 18px;
     font-family: Poppins, sans-serif;
     font-weight: 700;
-    color: #222;
+    color: #fff;
     vertical-align: top;
 }
 .header_transparent .header1-phone-number {
@@ -1495,7 +1502,7 @@ body.header_transparent .headerstyle-2 {
     z-index: 99;
 }
 .header2-menu-button i {
-    color: #222;
+    color: #fff;
     font-size: 24px;
 }
 .header_transparent .header2-menu-button i {
@@ -1736,9 +1743,9 @@ body.header_transparent .headerstyle-2 {
 body.header_transparent .nt-is-sticky .main-menu > ul > li > a {
     position: relative;
     display: block;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.5px;
     font-family: 'Poppins', 'sans-serif';
     text-transform: capitalize;
     color: #111;
@@ -3566,14 +3573,14 @@ body.logged-in.admin-bar .slidedown_header {
  * Breadcrumbs
  */
 .breadcrumbs {
-    font-size: 10px;
+    font-size: 13px;
     opacity: 0.7;
     text-transform: uppercase;
     font-family: 'Poppins', 'sans-serif';
 }
 .breadcrumbs span {
     padding: 0 10px;
-    color: #fff;
+    color: #1e2d3d;
 }
 .breadcrumbs span:first-child {
     padding-left: 0;
@@ -3584,7 +3591,7 @@ body.logged-in.admin-bar .slidedown_header {
 }
 body.breadcrumbs_dark .breadcrumbs span,
 body.breadcrumbs_dark .breadcrumbs {
-    color: #111;
+    color: #1e2d3d;
 }
 
 /*
@@ -3648,7 +3655,7 @@ body.breadcrumbs_dark .breadcrumbs {
 .custom-page-header {
     padding-top: 90px;
     padding-bottom: 80px;
-    background: #101010;
+    background: #e8f4fc;
 }
 .page-title {
     color: #fff;

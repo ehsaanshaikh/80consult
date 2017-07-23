@@ -393,13 +393,14 @@ h2 a:hover{
 }
 
 .header-contact-btn{
-  background-color:#1e2d3d;width:350px;padding:10px;
+  background-color:#1e2d3d;width:350px;padding:5px;
   border-radius: 5px 5px 5px 5px;
   align-content: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: poppins,sans-serif;
   text-transform: uppercase;
   color: #fff;
+
 
 }
 .clickroute{

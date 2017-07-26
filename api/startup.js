@@ -50,7 +50,7 @@ exports.apply = function (req, res) {
 
   })
 
-  var recipientEmail = 'amalina.ahmad@80startups.com';
+  var recipientEmail = 'ceo@80startups.com';
   var subject = "[80STARTUPS.COM] Startup Appointment";
   var mailbody = '<table>\
                         <tr>\

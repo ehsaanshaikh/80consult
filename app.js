@@ -10,6 +10,7 @@ var cors = require('cors');
 var http = require("http").createServer(app);
 
 var contact = require('./api/contact.js');
+var startup = require('./api/startup.js');
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -29,6 +30,7 @@ www.use(serveStatic('www'));
 app.use('/', www);
 
 app.post('/api/consult', contact.consult);
+app.post('/api/apply', startup.apply);
 
 app.listen(5000, function () {
   console.log('CORS-enabled web server listening on port 5000')

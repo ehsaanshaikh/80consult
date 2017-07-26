@@ -8,6 +8,7 @@ app.controller('startupcontroller', function ($scope, $http, $window) {
     $scope.data.last_name = $scope.last_name;
     $scope.data.email = $scope.email;
     $scope.data.phone_number = $scope.phone_number;
+    $scope.data.startup_name = $scope.startup_name;
     $scope.data.industry = $scope.industry; 
     $scope.data.initial_capital = $scope.initial_capital; 
     $scope.data.number_directors = $scope.number_directors;

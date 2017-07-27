@@ -48,7 +48,7 @@ exports.invest = function (req, res) {
 
   })
 
-  var recipientEmail = 'amalina.ahmad@80startups.com';
+  var recipientEmail = 'ceo@80startups.com';
   var subject = "[80STARTUPS.COM] Investor Appointment";
   var mailbody = '<table>\
                         <tr>\

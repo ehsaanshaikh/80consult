@@ -31,6 +31,7 @@ exports.invest = function (req, res) {
   var phone_number = req.body.phone_number;
   var company = req.body.company;
   var industry = req.body.industry;
+  var website = req.body.website;
   var description = req.body.description;
 
 
@@ -41,12 +42,13 @@ exports.invest = function (req, res) {
     'phone_number': phone_number,
     'company': company,
     'industry': industry,
+    'website': website,
     'description': description,
   }, function (err, vals) {
 
   })
 
-  var recipientEmail = 'ceo@80startups.com';
+  var recipientEmail = 'amalina.ahmad@80startups.com';
   var subject = "[80STARTUPS.COM] Investor Appointment";
   var mailbody = '<table>\
                         <tr>\
@@ -58,10 +60,10 @@ exports.invest = function (req, res) {
                       <tr>\
                       </tr>\
                       <tr>\
-                        <td>You have one startup appointment with the following client:</td>\
+                        <td>You have one investor appointment with the following client:</td>\
                       </tr>\
                       <tr>\
-                        <td>The details are as follow : <br><br><strong> Name:   ' + first_name + ' ' + last_name + '</strong><br><br><strong> Email:   ' + email + '</strong><br><br><strong> Contact Number:   ' + phone_number + '</strong><br><br><strong>Company:   ' + company + '</strong><br><br><strong>Industry:   ' + industry + '</strong><br><br><strong>Description:   ' + description + '</strong><br><br></td>\
+                        <td>The details are as follow : <br><br><strong> Name:   ' + first_name + ' ' + last_name + '</strong><br><br><strong> Email:   ' + email + '</strong><br><br><strong> Contact Number:   ' + phone_number + '</strong><br><br><strong>Company:   ' + company + '</strong><br><br><strong>Industry:   ' + industry + '</strong><br><br><strong>Website   ' + website + '</strong><br><br><strong>Description:   ' + description + '</strong><br><br></td>\
                       </tr>\
                       <tr>\
                         <td>Best wishes,</td>\

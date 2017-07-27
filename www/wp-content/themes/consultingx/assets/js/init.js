@@ -144,7 +144,7 @@
     });
 
 
-})(jQuery); 
+})(jQuery);
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -153,5 +153,20 @@
 
   ga('create', 'UA-80556549-1', 'auto');
   ga('send', 'pageview');
+//drip
+
+<!-- Drip -->
+
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = '8321936';
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/8321936.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
 
 // end document

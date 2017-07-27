@@ -284,6 +284,9 @@
   h3 {
     font-family: Poppins;
     font-weight: 700;
+    margin: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   h4 {
@@ -385,3 +388,14 @@ body.header_transparent .nt-is-sticky .header .header-signup-btn:hover {
     .indent-4 { background-color: white; margin: 10px; border:1px solid white; padding:10px; overflow:hidden; width: 500px; height: 500px; padding-left: 10px;}
     .indent-5 { padding-left:10px; width: 1400px; height: 800px; border:1px solid white; background-color: white;}
     .indent-6 { background-color: white; margin: 10px; border:1px solid white; padding:10px; overflow:hidden; width: 525px; height: 1000px; padding-left: 10px;}
+
+.button {
+    background-color: #23C0F1; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

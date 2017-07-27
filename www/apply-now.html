@@ -29,8 +29,10 @@
   <script type='text/javascript' src='../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.1.5'></script>
   <script type='text/javascript' src='../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.3.1.5'></script>
   <script type='text/javascript' src='../wp-content/themes/consultingx/assets/js/smoothscroll.js?ver=1.4.6'></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/angular-storage.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/startupCtrl.js"></script>
+  <script type="text/javascript" src="js/investorCtrl.js"></script>
   <link rel='https://api.w.org/' href='../wp-json/index.html' />
   <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc-rsd.php.html" />
   <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" />
@@ -46,7 +48,7 @@
   </style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
 
 <body class="page-template-default page page-id-163 wpb-js-composer js-comp-ver-5.1 vc_responsive">
-   <div data-ng-app="80consult" data-ng-controller="startupcontroller" ng-init="successMsg()">
+   <div data-ng-app="80consult" data-ng-controller="investorcontroller" ng-init="successMsg()">
 
 
   <!-- Start header -->
@@ -226,8 +228,8 @@
         <meta property="position" content="2">
         </span>
       </div>
-
-      <h1 style="color:#1e2d3d;" class="page-title">Congratulations! You are launching your startup in Singapore.</h1></div>
+      <br>  
+      <h1 style="color:#1e2d3d;" class="page-title">You're on your way to becoming an investor! We just need a few details from you.</h1></div>
   </div>
   <div id="wrapper" class="blue-background">
 
@@ -273,9 +275,9 @@
                      <div class="col-sm-12 more">
                        <div  style="height:500px;padding-top:20px;padding-left:30px">
                          <div>
-                             <h6 class="krucial-custom-heading" id="Heading_593b7b5912cb8" align="center" style="color: #fff;">Tell us about your startup.</h6>
+                             <h6 class="krucial-custom-heading" id="Heading_593b7b5912cb8" align="center" style="color: #fff;">Tell us about you or your company.</h6>
                              <!--<a class="header-signup-btn" href="contact.html">Read More</a>-->
-                             <form name="startupapplicationform" method="post" ng-controller="startupcontroller" ng-submit="apply()">
+                             <form name="investorapplicationform" method="post" ng-controller="investorcontroller" ng-submit="invest()">
 
                                  <div class="col-sm-6 col-xs-12 first">
                                      <label>First Name</label><br />
@@ -294,20 +296,12 @@
                                      <span class="wpcf7-form-control-wrap tel-158"><input type="tel" name="tel-158" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" required ng-model = "phone_number" placeholder="Number" /></span>
                                  </div>
                                  <div class="col-sm-6 col-xs-12 third">
-                                     <label>Startup Name</label><br />
-                                     <span class="wpcf7-form-control-wrap email-157"><input type="text" name="email-157" value="" size="40" class="wpcf7-form-control wpcf7-text  wpcf7-validates-as-required " required ng-model = "startup_name" placeholder="Startup Name" /></span>
+                                     <label>Company</label><br />
+                                     <span class="wpcf7-form-control-wrap email-157"><input type="text" name="email-157" value="" size="40" class="wpcf7-form-control wpcf7-text  wpcf7-validates-as-required " required ng-model = "company" placeholder="Company" /></span>
                                  </div>
                                  <div class="col-sm-6 col-xs-12 third">
                                      <label>Industry</label><br />
                                      <span class="wpcf7-form-control-wrap email-157"><input type="text" name="email-157" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required " required ng-model = "industry" placeholder="Industry" /></span>
-                                 </div>
-                                 <div class="col-sm-6 col-xs-12 third">
-                                     <label>Initial Capital</label><br />
-                                     <span class="wpcf7-form-control-wrap email-157"><input type="text" name="email-157" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required " required ng-model = "initial_capital" placeholder="Initial Capital" /></span>
-                                 </div>
-                                 <div class="col-sm-6 col-xs-12 third">
-                                     <label>No of Directors</label><br />
-                                     <span class="wpcf7-form-control-wrap email-157"><input type="text" name="email-157" value="" size="40" class="wpcf7-form-control wpcf7-text  wpcf7-validates-as-required " required ng-model = "number_directors" placeholder="Number of Directors" /></span>
                                  </div>
 
                                  <div class="col-xs-12 first input-remove-margin">

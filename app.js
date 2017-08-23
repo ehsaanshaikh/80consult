@@ -32,6 +32,7 @@ app.use('/', www);
 
 app.post('/api/consult', contact.consult);
 app.post('/api/apply', startup.apply);
+app.post('/api/incubatorapply', startup.incubatorapply);
 app.post('/api/invest', investor.invest);
 
 app.listen(5000, function () {

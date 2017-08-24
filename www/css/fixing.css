@@ -1,0 +1,8 @@
+.main-menu {
+    position: relative;
+    display: inline-block;
+    top: 28px !important;
+    left: 0;
+    right: 0;
+    z-index: 101;
+}

@@ -1726,6 +1726,7 @@ body.header_transparent .headerstyle-2 {
     left: 100px;
     right: 0;
     z-index: 101;
+    word-spacing: 5px !important;
 }
 .main-menu > ul {
     position: relative;

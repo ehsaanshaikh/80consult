@@ -1181,6 +1181,7 @@ body.header_transparent .header .light-logo {
 /* not transparent */
 .header .light-logo {
     display: none;
+    width: 200px;
 }
 .header .dark-logo {
     display: inline-block;
@@ -1415,7 +1416,7 @@ body.header_transparent .header .header-signup-btn {
 body.header_transparent .nt-is-sticky .header .header-login-btn {
     display: inline-block;
     cursor: pointer;
-    color: #111;
+    color: #fff;
     font-family: 'Poppins', 'sans-serif';
     font-weight: 700;
     font-size: 13px;
@@ -1437,7 +1438,7 @@ body.header_transparent .nt-is-sticky .header .header-signup-btn {
     border: 3px solid #e4002b;
     display: inline-block;
     border-radius: 50px;
-    color: #fff;
+   /*  color: #fff; */
     cursor: pointer;
     font-family: 'Poppins', 'sans-serif';
     font-size: 13px;
@@ -1482,7 +1483,7 @@ body.header_transparent .nt-is-sticky .header .header-signup-btn:hover {
 .headerstyle-1 .header-signup-btn {
     margin-left: 30px;
     position: relative;
-    top: -18px;
+    top: 15px;
 }
 
 
@@ -1721,8 +1722,8 @@ body.header_transparent .headerstyle-2 {
 .main-menu {
     position: relative;
     display: inline-block;
-    top: 5px;
-    left: 0;
+    top: 15px;
+    left: 100px;
     right: 0;
     z-index: 101;
 }

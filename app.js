@@ -30,6 +30,7 @@ var www = connect();
 www.use(serveStatic('www'));
 app.use('/', www);
 
+app.post('/api/expand1', contact.expand1);
 app.post('/api/consult', contact.consult);
 app.post('/api/apply', startup.apply);
 app.post('/api/incubatorapply', startup.incubatorapply);

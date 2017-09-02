@@ -39,9 +39,9 @@ exports.consult = function (req, res) {
       'phonenumber': phoneNumber,
       'message': message,
 		},function (err,vals){
-			
+
     })
-    
+
     var recipientEmail = 'ceo@80startups.com';
     var subject = "[80STARTUPS.COM] Consult Appointment";
     var mailbody = '<table>\
@@ -75,6 +75,61 @@ exports.consult = function (req, res) {
 
 ///____________________END______________________
 
+////-----------------Stage1 - Expand -----------------
+
+exports.expand1 = function (req, res) {
+
+  var firstName = req.body.firstname;
+  var lastName = req.body.lastname;
+  var email = req.body.email;
+  var phoneNumber = req.body.phonenumber;
+  var message = req.body.message;
+
+
+  consultCRUD.create({
+			'firstname': firstName,
+      'lastname' : lastName,
+      'email': email,
+      'phonenumber': phoneNumber,
+      'message': message,
+		},function (err,vals){
+
+    })
+
+    var recipientEmail = 'ceo@80startups.com';
+    var subject = "[80STARTUPS.COM] Expand to singapore - Stage 1-  Appointment";
+    var mailbody = '<table>\
+                        <tr>\
+                        <td><img src="http://80startups.com/img/80startups_logo.png" style="width:500px;"></td><br>\
+                      </tr>\
+                      <tr>\
+                        <td><h1>Dear Amol Chawathe,</td>\
+                      </tr>\
+                      <tr>\
+                      </tr>\
+                      <tr>\
+                        <td>Client is interested to expand business to singapore:</td>\
+                      </tr>\
+                      <tr>\
+                        <td>The details are as follow : <br><br><strong> Name:   ' + firstName + ' ' + lastName + '</strong><br><br><strong> Email:   ' + email + '</strong><br><br><strong> Contact Number:   ' + phoneNumber + '</strong><br><br><strong>Business Details:   ' + message + '</strong><br><br></td>\
+                      </tr>\
+                      <tr>\
+                        <td>Best wishes,</td>\
+                      </tr>\
+                      <tr>\
+                        <td><h2>80startups.com</h2></td>\
+                      </tr>\
+                      <tr>\
+                        <td bgcolor="#000000"><font color ="white">This is a one-time email. Please do not reply to this email.</font></td>\
+                      </tr>\
+                    </table>';
+
+      send_mail(recipientEmail, subject, mailbody);
+}
+
+///____________________END______________________
+
+
 function send_mail(usermail, subject, mailbody) {
 
   var auth = {
@@ -101,7 +156,7 @@ function send_mail(usermail, subject, mailbody) {
     } else {
       console.log('Response: ' + info);
       //res.sendStatus(200);
-      
+
     }
   });
 };

@@ -112,7 +112,7 @@
   .header2-fullscreen .mobile-menu li>a,
   .slidedown_menu .main-menu ul li a,
   body.header_transparent .slidedown_menu .main-menu ul li a {
-    color: #fff;
+    /*color: #fff;*/
   }
 
   .main-menu>ul>li.current_page_item>a,
@@ -366,7 +366,7 @@
       background: linear-gradient(210deg,#1f9cd9 20%,#2094d6 30.000000000000004%,#218cd2 40%,#2084cf 50%,#1f7ccc 60.00000000000001%,#1c6cc5 80%,#145dbe);
       height: auto;
       margin: 0;
-      z-index: 9999;
+      z-index: 99;
       border-radius: 10px 10px 10px 10px;
       padding-bottom: 40px;
 }

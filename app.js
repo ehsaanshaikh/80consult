@@ -30,6 +30,10 @@ var www = connect();
 www.use(serveStatic('www'));
 app.use('/', www);
 
+var admin = connect();
+admin.use(serveStatic('admin'));
+app.use('/admin', admin);
+
 app.post('/api/expand3', contact.expand3);
 app.post('/api/expand1', contact.expand1);
 app.post('/api/consult', contact.consult);

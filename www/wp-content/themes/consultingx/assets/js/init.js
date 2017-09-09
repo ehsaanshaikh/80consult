@@ -175,5 +175,3 @@ window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.h
 heap.load("3375695941");
 
 // livechat
-
-<script src="https://my.marketeer.co/interface/?k=0x179a19a7b"></script>

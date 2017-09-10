@@ -1,15 +1,22 @@
 var http = require('http');
 var mysql = require('mysql');
+//var db = mysql.createPool({
+//    database: '80consult',
+//    user: 'ftdev',
+//    password: '10gXWOqeaf',
+//    host: 'apps.fountaintechies.com',
+//});
 var db = mysql.createPool({
     database: '80consult',
-    user: 'ftdev',
-    password: '10gXWOqeaf',
-    host: 'apps.fountaintechies.com',
+    user: 'root',
+    password: 'lamp',
+    host: 'localhost',
 });
 
 var CRUD = require('mysql-crud');
 var contactsCRUD = CRUD(db, 'contacts');
 exports.createForm = function (req, res) {
+    console.log("before");
 
 
     var createObj = {
@@ -22,6 +29,8 @@ exports.createForm = function (req, res) {
         "json": req.body.json || "",
         created_at: new Date()
     };
+    console.log("after");
+
     contactsCRUD.create(createObj, function (err, data) {
         console.log(data);
         res.json(data);

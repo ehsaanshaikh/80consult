@@ -1236,7 +1236,7 @@ body.header_transparent .nt-is-sticky .header {
     left: 0;
     right: 0;
     background: #fff;
-    z-index: 9999;
+    z-index: 999999999;
     -webkit-transform: translateY(-200px);
     -moz-transform: translateY(-200px);
     -ms-transform: translateY(-200px);
@@ -1734,6 +1734,7 @@ body.header_transparent .headerstyle-2 {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: -50px;
 }
 .main-menu > ul > li {
     position: relative;
@@ -4871,4 +4872,17 @@ body.search .search-form button {
     .slick-arrow {
         display: none !important;
     }
+}
+
+
+.new-scroll ul li a{
+    color:#1e2d3d !important;
+  }
+
+  .new-scroll > ul {
+  position: relative;
+  list-style: none;
+  margin: -20px;
+  padding: 0;
+  margin-left: 50px;
 }

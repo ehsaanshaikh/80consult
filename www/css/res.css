@@ -8,9 +8,13 @@
            right:45px;
        }
        
-       .parallax-window{
-           width: 100%;
-       }
+       .footer-callout-num {
+        font-size: 22px;
+    }
+
+    .parallax-window{
+        padding-top: 60px !important;
+    }
 
     }
     

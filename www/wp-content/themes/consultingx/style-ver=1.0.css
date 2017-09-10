@@ -4873,3 +4873,16 @@ body.search .search-form button {
         display: none !important;
     }
 }
+
+
+.new-scroll ul li a{
+    color:#1e2d3d !important;
+  }
+
+  .new-scroll > ul {
+  position: relative;
+  list-style: none;
+  margin: -20px;
+  padding: 0;
+  margin-left: 50px;
+}

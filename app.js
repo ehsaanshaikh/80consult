@@ -12,6 +12,7 @@ var http = require("http").createServer(app);
 var contact = require('./api/contact.js');
 var startup = require('./api/startup.js');
 var investor = require('./api/investor.js');
+var customer = require('./api/customer');
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -40,6 +41,10 @@ app.post('/api/consult', contact.consult);
 app.post('/api/apply', startup.apply);
 app.post('/api/incubatorapply', startup.incubatorapply);
 app.post('/api/invest', investor.invest);
+
+
+app.post('/api/create-form', customer.createForm);
+app.post('/api/getall-form', customer.getAllForm);
 
 app.listen(5000, function () {
   console.log('CORS-enabled web server listening on port 5000')

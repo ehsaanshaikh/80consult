@@ -97,6 +97,9 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
     $("#thankyou").hide();
   }
 
+$scope.createForm = function (data) {
+  console.log("in ca");
 
+}
 
 });

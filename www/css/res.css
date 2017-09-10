@@ -9,7 +9,7 @@
        }
        
        .footer-callout-num {
-        font-size: 22px;
+        font-size: 22px !important;
     }
 
     .parallax-window{

@@ -2,7 +2,24 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
 
   //----------- Consult ------------------------///
 
-  $scope.consult = function (req, res) {
+  $scope.consult = function (req, res) { console.info("in consult");
+
+    var postObj = {
+      "first_name":  $scope.firstName || "",
+      "last_name": $scope.lastName || "",
+      "email": $scope.email || "",
+      "mobile": $scope.phoneNumber || "",
+      "description": $scope.description || "",
+      "type": "Bangalore-event" || ""
+    };
+
+    $http.post(baseurl + 'create-form/', postObj)
+        .success(function (res) {
+          console.info("create form response", res);
+      }).error(function (err) {
+        console.log("error", err);
+      })
+
     $scope.data = {};
     $scope.data.firstname = $scope.firstName;
     $scope.data.lastname = $scope.lastName;
@@ -97,9 +114,10 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
     $("#thankyou").hide();
   }
 
-$scope.createForm = function (data) {
-  console.log("in ca");
+$scope.saveContactForm = function (data) {
+  console.info("in ca");
 
 }
+  $scope.data = "in contact controller";
 
 });

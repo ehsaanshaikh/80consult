@@ -10,6 +10,7 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
       "email": $scope.email || "",
       "mobile": $scope.phoneNumber || "",
       "description": $scope.description || "",
+      "startup_name": $scope.startupName || "",
       "type": "Bangalore-event" || ""
     };
 
@@ -18,7 +19,7 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
           console.info("create form response", res);
       }).error(function (err) {
         console.log("error", err);
-      })
+      });
 
     $scope.data = {};
     $scope.data.firstname = $scope.firstName;
@@ -42,6 +43,7 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
   //----------- Consult ------------------------///
 
   $scope.expandstage1 = function (req, res) {
+
     $scope.data = {};
     $scope.data.firstname = $scope.firstName;
     $scope.data.lastname = $scope.lastName;
@@ -49,6 +51,31 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
     $scope.data.phonenumber = $scope.phoneNumber;
     $scope.data.message = $scope.description;
 
+
+
+
+    var postObj = {
+      "first_name":  $scope.firstName || "",
+      "last_name": $scope.lastName || "",
+      "email": $scope.email || "",
+      "mobile": $scope.phoneNumber || "",
+      "description": $scope.description || "",
+      "type": "evaluate-your-business" || ""
+    };
+
+    $http.post(baseurl + 'create-form/', postObj)
+        .success(function (res) {
+          console.info("create form response", res);
+        }).error(function (err) {
+          console.log("error", err);
+        });
+
+
+
+
+
+
+console.info($scope.data);
 
     $http.post(baseurl + 'expand1/', $scope.data).success(function (res) {
       if (res.status == 'false') {
@@ -71,6 +98,22 @@ app.controller('contactcontroller', function ($scope, $http, $window) {
     $scope.data.phonenumber = $scope.phoneNumber;
     $scope.data.message = $scope.description;
 
+
+    var postObj = {
+      "first_name":  $scope.firstName || "",
+      "last_name": $scope.lastName || "",
+      "email": $scope.email || "",
+      "mobile": $scope.phoneNumber || "",
+      "description": $scope.description || "",
+      "type": "evaluate-your-business" || ""
+    };
+
+    $http.post(baseurl + 'create-form/', postObj)
+        .success(function (res) {
+          console.info("create form response", res);
+        }).error(function (err) {
+          console.log("error", err);
+        });
 
     $http.post(baseurl + 'expand3/', $scope.data).success(function (res) {
       if (res.status == 'false') {

@@ -25,13 +25,19 @@ exports.createForm = function (req, res) {
         "email": req.body.email || "",
         "mobile": req.body.mobile || "",
         "description": req.body.description || "",
+        "startup_name": req.body.startup_name || "",
+        "initial_capital": req.body.initial_capital || "",
+        "industry": req.body.industry || "",
+        "no_of_directors": req.body.no_of_directors || "",
         "type": req.body.type || "",
         "json": req.body.json || "",
         created_at: new Date()
     };
-    console.log("after");
+    console.log("after", createObj);
 
     contactsCRUD.create(createObj, function (err, data) {
+
+        console.log(err);
         console.log(data);
         res.json(data);
     });

@@ -6,9 +6,8 @@ if (document.location.hostname == "80startups.com")
 
 }else{
 
-  var baseurl = "http://80startups.com/api/";
+  var baseurl = "http://localhost:5000/api/";
 }
-//var baseurl = "http://localhost:5000/api/";
 
 app.config(['storeProvider', function (storeProvider) {
   storeProvider.setStore('sessionStorage');

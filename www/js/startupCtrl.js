@@ -14,7 +14,27 @@ app.controller('startupcontroller', function ($scope, $http, $window) {
     $scope.data.number_directors = $scope.number_directors;
     $scope.data.description = $scope.description;
 
-    console.log($scope.data);
+    console.info($scope.data);
+
+    var postObj = {
+      "first_name":  $scope.first_name || "",
+      "last_name": $scope.last_name || "",
+      "email": $scope.email || "",
+      "mobile": $scope.phone_number || "",
+      "description": $scope.description || "",
+      "startup_name": $scope.startup_name || "",
+      "initial_capital": $scope.initial_capital || "",
+      "industry": $scope.industry || "",
+      "no_of_directors": $scope.number_directors || "",
+      "type": "launch-startup" || ""
+    };
+
+    $http.post(baseurl + 'create-form/', postObj)
+        .success(function (res) {
+          console.info("create form response", res);
+        }).error(function (err) {
+          console.log("error", err);
+        });
 
     $http.post(baseurl + 'apply/', $scope.data).success(function (res) {
       if (res.status == 'false') {

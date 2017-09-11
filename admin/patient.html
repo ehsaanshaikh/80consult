@@ -120,25 +120,13 @@
                                 <a ng-click="setOrder('firstName')" class="headerSortDown"></a>
                                 <a ng-click="setOrder('-firstName')" class="headerSortUp"></a>
                             </th>
-                            <th>Gender
-                                <a ng-click="setOrder('gender')" class="headerSortDown"></a>
-                                <a ng-click="setOrder('-gender')" class="headerSortUp"></a>
-                            </th>
-                            <th>NRIC
-                                <a ng-click="setOrder('nric')" class="headerSortDown"></a>
-                                <a ng-click="setOrder('-nric')" class="headerSortUp"></a>
-                            </th>
-                            <th>Mobile No.
-                                <a ng-click="setOrder('mobile_number')" class="headerSortDown"></a>
-                                <a ng-click="setOrder('-mobile_number')" class="headerSortUp"></a>
-                            </th>
                             <th>Email
                                 <a ng-click="setOrder('email_address')" class="headerSortDown"></a>
                                 <a ng-click="setOrder('-email_address')" class="headerSortUp"></a>
                             </th>
-                            <th>Last Visit
-                                <a ng-click="setOrder('lastVisit')" class="headerSortDown"></a>
-                                <a ng-click="setOrder('-lastVisit')" class="headerSortUp"></a>
+                            <th>Mobile No.
+                                <a ng-click="setOrder('mobile_number')" class="headerSortDown"></a>
+                                <a ng-click="setOrder('-mobile_number')" class="headerSortUp"></a>
                             </th>
                         </tr>
                     </thead>
@@ -147,12 +135,9 @@
                             <td>
                                 <input type="checkbox" value="{{cust.id}}" ng-model="cust.selected" ng-change="change(cust)">
                             </td>
-                            <td><a href="patient2.html?nric={{cust.nric}}">{{cust.firstName}} {{cust.lastName}}</a></td>
-                            <td>{{cust.gender}}</td>
-                            <td>{{cust.nric}}</td>
-                            <td>{{cust.mobile_number}}</td>
-                            <td>{{cust.email_address}}</td>
-                            <td>{{cust.lastVisit | date:"medium"}}</td>
+                            <td><a href="patient2.html?nric={{cust.email}}">{{cust.first_name}} {{cust.last_name}}</a></td>
+                            <td>{{cust.email}}</td>
+                            <td>{{cust.mobile}}</td>
                         </tr>
                     </tbody>
                 </table>

@@ -544,7 +544,7 @@ app.controller('admincontroller', function ($scope, $http, $window, $location, $
             $window.location = 'index.html';
         }
 
-        $http.get(baseurl + 'allcustomer').success(function (res) {
+        $http.get(baseurl + 'getallcustomer-form').success(function (res) {
 
             if (res.status == 'false') {
 

@@ -39,9 +39,7 @@ exports.createForm = function (req, res) {
 
 
 exports.getAllForm = function (req, res) {
-    var nric = req.params.nric;
-    var type = 'note';
-    var sql = "SELECT * FROM `patient_logs` WHERE `nric` = " + "'" + nric + "'" + " AND `type` = " + "'" + type + "' ORDER BY `created_at` DESC";
+    var sql = "SELECT * FROM `contacts` WHERE 1 ORDER BY `created_at` DESC";
     db.query(sql, function (err, data) {
         res.json(data);
     });

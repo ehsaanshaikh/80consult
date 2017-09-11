@@ -44,7 +44,7 @@ app.post('/api/invest', investor.invest);
 
 
 app.post('/api/create-form', customer.createForm);
-app.post('/api/getall-form', customer.getAllForm);
+app.get('/api/getallcustomer-form', customer.getAllForm);
 
 app.listen(5000, function () {
   console.log('CORS-enabled web server listening on port 5000')

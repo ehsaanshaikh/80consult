@@ -42,7 +42,9 @@ exports.consult = function (req, res) {
 
     })
 
-    var recipientEmail = 'ceo@80startups.com';
+    var recipientEmail = 'ceo@80startups.com,office@80startups.com';
+    console.log("recipientEmail", recipientEmail);
+    
     var subject = "[80STARTUPS.COM] Consult Appointment";
     var mailbody = '<table>\
                         <tr>\
@@ -96,7 +98,7 @@ exports.expand1 = function (req, res) {
 
     })
 
-    var recipientEmail = 'ceo@80startups.com';
+    var recipientEmail = 'ceo@80startups.com,office@80startups.com';
     var subject = "Evaluate Business Stage 1 Appointment";
     var mailbody = '<table>\
                         <tr>\
@@ -151,7 +153,7 @@ exports.expand3 = function (req, res) {
 
     })
 
-    var recipientEmail = 'ceo@80startups.com';
+    var recipientEmail = 'ceo@80startups.com,office@80startups.com';
     var subject = "Expand to singapore - Stage 3 -  Appointment";
     var mailbody = '<table>\
                         <tr>\

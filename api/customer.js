@@ -1,17 +1,17 @@
 var http = require('http');
 var mysql = require('mysql');
-//var db = mysql.createPool({
-//    database: '80consult',
-//    user: 'ftdev',
-//    password: '10gXWOqeaf',
-//    host: 'apps.fountaintechies.com',
-//});
 var db = mysql.createPool({
     database: '80consult',
-    user: 'root',
-    password: 'lamp',
-    host: 'localhost',
+    user: 'ftdev',
+    password: '10gXWOqeaf',
+    host: 'apps.fountaintechies.com',
 });
+//var db = mysql.createPool({
+//    database: '80consult',
+//    user: 'root',
+//    password: 'lamp',
+//    host: 'localhost',
+//});
 
 var CRUD = require('mysql-crud');
 var contactsCRUD = CRUD(db, 'contacts');
